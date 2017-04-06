@@ -72,9 +72,7 @@ public class TilePosition extends AbstractPoint<TilePosition>{
 
     @Override
     public int hashCode() {
-        int result = x;
-        result = 31 * result + y;
-        return result;
+        return x * 256 + y;
     }
 
     public TilePosition getPoint(){
